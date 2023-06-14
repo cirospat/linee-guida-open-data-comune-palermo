@@ -1,2 +1,2 @@
 $ pip install git+https://github.com/italia/docs-italia-theme.git
-PyYAML==3.12
+pyyaml>=5.4
