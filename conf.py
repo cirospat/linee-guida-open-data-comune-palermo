@@ -13,7 +13,10 @@ settings_file_name = 'linee-guida-open-data-palermo'
 # -- No need to change below here
 
 import sys, os
-docs_italia_theme = __import__("docs-italia-theme")
+docs_italia_theme = __import__("docs_italia_theme")
+html_theme = "docs_italia_theme"
+html_theme_path = [docs_italia_theme.get_html_theme_path()]
+
 from recommonmark.transform import AutoStructify
 from recommonmark.parser import CommonMarkParser
 
@@ -48,7 +51,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.coverage',
     'sphinx.ext.ifconfig',
-    'docs-italia-theme',
+    'docs_italia_theme',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
